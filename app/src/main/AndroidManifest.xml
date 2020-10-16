@@ -3,13 +3,13 @@
     package="com.example.ejercicioencasa">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RoutineTimeInput"></activity>
+        <activity android:name=".RoutineTimeInput" />
         <activity android:name=".GoalSelect" />
         <activity android:name=".HeightInput" />
         <activity android:name=".WeightInput" />
@@ -18,13 +18,15 @@
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_splash_screen"
-            android:theme="@style/FullscreenTheme" />
-        <activity android:name=".MainActivity">
+            android:theme="@style/FullscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

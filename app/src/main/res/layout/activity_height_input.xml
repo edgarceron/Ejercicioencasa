@@ -7,7 +7,7 @@
     tools:context=".HeightInput">
 
     <EditText
-        android:id="@+id/editTextHeight"
+        android:id="@+id/alturaInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="62dp"
@@ -46,7 +46,8 @@
         android:layout_marginStart="141dp"
         android:layout_marginEnd="141dp"
         android:layout_marginBottom="169dp"
-        android:text="Siguiente"
+        android:onClick="btnNext"
+        android:text="@string/siguiente_label"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
