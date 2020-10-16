@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Ejercicio en casa</string>
     <string name="title_activity_splash_screen">FullscreenActivity</string>
+    <string name="hombre_label">Hombre</string>
+    <string name="mujer_label">Mujer</string>
+    <string name="siguiente_label">Siguiente</string>
 </resources>
