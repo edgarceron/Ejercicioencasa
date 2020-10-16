@@ -16,6 +16,8 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(UtilitiesDatabase.TablaInfoUsuario.CREATE_TABLE_INFO_USUARIO);
         db.execSQL(UtilitiesDatabase.TablaEjercicios.CREATE_TABLE_EJERCICIOS);
+        db.execSQL(UtilitiesDatabase.TablaRutinaHeader.CREATE_TABLE_RUTINA_HEADER);
+        db.execSQL(UtilitiesDatabase.TablaRutinaBody.CREATE_TABLE_RUTINA_BODY);
     }
 
     @Override

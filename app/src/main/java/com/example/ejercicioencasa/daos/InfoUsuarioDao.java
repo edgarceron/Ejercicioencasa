@@ -37,7 +37,7 @@ public class InfoUsuarioDao {
 
     public ArrayList<InfoUsuario> consultarInfoUsuario(){
         ArrayList<InfoUsuario> lista = new ArrayList<>();
-        Cursor cursor = db.rawQuery(UtilitiesDatabase.TablaInfoUsuario.CREATE_TABLE_INFO_USUARIO, null);
+        Cursor cursor = db.rawQuery(UtilitiesDatabase.TablaInfoUsuario.CONSULTAR_ALL_TABLE, null);
         while (cursor.moveToNext()){
             lista.add(new InfoUsuario(cursor.getString(1), cursor.getString(2)));
         }

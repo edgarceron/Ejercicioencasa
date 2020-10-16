@@ -35,8 +35,43 @@ public class EjercicioDao {
         return db.insert(UtilitiesDatabase.TablaEjercicios.TABLE_NAME, null, registro);
     }
 
+    public Ejercicio getEjercicio(int id){
+        Ejercicio ejercicio = null;
+        String[] campos = new String[]{
+                UtilitiesDatabase.TablaEjercicios.ID,
+                UtilitiesDatabase.TablaEjercicios.NOMBRE,
+                UtilitiesDatabase.TablaEjercicios.DESCRIPCION,
+                UtilitiesDatabase.TablaEjercicios.GIF,
+                UtilitiesDatabase.TablaEjercicios.URL_VIDEO,
+                UtilitiesDatabase.TablaEjercicios.QUEMA_CALORIAS,
+                UtilitiesDatabase.TablaEjercicios.TIEMPO_REPETICION
+        };
+        String parametros = UtilitiesDatabase.TablaEjercicios.ID + "?";
+        String[] argumentos = new String[]{String.valueOf(id)};
+        Cursor cursor = db.query(UtilitiesDatabase.TablaEjercicios.TABLE_NAME, campos, parametros,
+                argumentos, null, null, null) ;
+
+        while(cursor.moveToNext()){
+            ejercicio = new Ejercicio(
+                        cursor.getInt(0),
+                        cursor.getString(1),
+                        cursor.getString(2),
+                        cursor.getString(3),
+                        cursor.getString(4),
+                        cursor.getFloat(5),
+                        cursor.getInt(6),
+                        cursor.getInt(7),
+                        cursor.getColumnName(8),
+                        cursor.getInt(9)
+                );
+        }
+        cursor.close();
+        return  ejercicio;
+    }
+
     public ArrayList<Ejercicio> getEjercicios(int dificultad, String musculo, int ruido){
         String[] campos = new String[]{
+                UtilitiesDatabase.TablaEjercicios.ID,
                 UtilitiesDatabase.TablaEjercicios.NOMBRE,
                 UtilitiesDatabase.TablaEjercicios.DESCRIPCION,
                 UtilitiesDatabase.TablaEjercicios.GIF,

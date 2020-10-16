@@ -10,6 +10,7 @@ import android.view.View;
 import com.example.ejercicioencasa.daos.EjercicioDao;
 import com.example.ejercicioencasa.daos.InfoUsuario;
 import com.example.ejercicioencasa.daos.InfoUsuarioDao;
+import com.example.ejercicioencasa.utilities.AppUtilities;
 
 public class GenderSelect extends AppCompatActivity {
 
@@ -21,19 +22,13 @@ public class GenderSelect extends AppCompatActivity {
         context = getApplicationContext();
     }
 
-    public void alterInfoUsuario(String codigo, String valor){
-        InfoUsuario infoUsuario = new InfoUsuario(codigo,valor);
-        InfoUsuarioDao infoUsuarioDao = new InfoUsuarioDao(context);
-        infoUsuarioDao.alterInfoUsuario(infoUsuario);
-    }
-
     public void btnMale(View view){
-        alterInfoUsuario(InfoUsuario.SEXO, "M");
+        AppUtilities.alterInfoUsuario(InfoUsuario.SEXO, "M", context);
         this.btnNext(view);
     }
 
     public void btnFemale(View view){
-        alterInfoUsuario(InfoUsuario.SEXO, "F");
+        AppUtilities.alterInfoUsuario(InfoUsuario.SEXO, "F", context);
         this.btnNext(view);
     }
 

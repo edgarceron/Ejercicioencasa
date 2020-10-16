@@ -4,4 +4,7 @@
     <string name="hombre_label">Hombre</string>
     <string name="mujer_label">Mujer</string>
     <string name="siguiente_label">Siguiente</string>
+    <string name="info_label">Información</string>
+    <string name="wrong_weight_input">Ingrese un peso valido</string>
+    <string name="wrong_height_input">Ingrese una altura valida</string>
 </resources>

@@ -15,6 +15,8 @@ public class RoutineTimeInput extends AppCompatActivity {
     }
 
     public void btnNext(View view){
+
+
         Intent intent = new Intent(this, GoalSelect.class);
         startActivity(intent);
     }
