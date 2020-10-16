@@ -24,10 +24,7 @@ public class InfoUsuarioDao {
         ContentValues registro = new ContentValues();
         registro.put(UtilitiesDatabase.TablaInfoUsuario.CODIGO, infoUsuario.codigo);
         registro.put(UtilitiesDatabase.TablaInfoUsuario.VALOR, infoUsuario.valor);
-        long id = db.insert(UtilitiesDatabase.TablaInfoUsuario.TABLE_NAME, null, registro);
-
-        db.close();
-        return id;
+        return db.insert(UtilitiesDatabase.TablaInfoUsuario.TABLE_NAME, null, registro);
     }
 
     public long updateInfoUsuario(InfoUsuario infoUsuario){
@@ -44,7 +41,7 @@ public class InfoUsuarioDao {
         while (cursor.moveToNext()){
             lista.add(new InfoUsuario(cursor.getString(1), cursor.getString(2)));
         }
-        db.close();
+
         cursor.close();
         return lista;
     }
@@ -60,7 +57,6 @@ public class InfoUsuarioDao {
         if(cursor.moveToNext()){
             infoUsuario = new InfoUsuario(cursor.getString(0), cursor.getString(1));
         }
-        db.close();
         cursor.close();
         return infoUsuario;
     }

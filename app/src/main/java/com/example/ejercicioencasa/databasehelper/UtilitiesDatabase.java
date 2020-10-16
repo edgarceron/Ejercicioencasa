@@ -10,9 +10,9 @@ public class UtilitiesDatabase {
         public static final String CODIGO = "codigo";
         public static final String VALOR = "valor";
 
-        public static final String CREATE_TABLE_INFO_USUARIO = "CREATE TABLE " + TABLE_NAME + "(" +
-                ID + "INTEGER PRIMARY KEY AUTOINCREMENT, " + CODIGO + " TEXT, " + VALOR +
-                " TEXT);";
+        public static final String CREATE_TABLE_INFO_USUARIO = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " (" +
+                ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + CODIGO + " TEXT, " + VALOR +
+                " TEXT)";
 
         public static final String CONSULTAR_ALL_TABLE = "SELECT * FROM " + TABLE_NAME + ";";
     }
@@ -30,11 +30,11 @@ public class UtilitiesDatabase {
         public static final String MUSCULO = "musculo";
         public static final String RUIDO = "ruido";
 
-        public static final String CREATE_TABLE_EJERCICIOS = "CREATE TABLE " + TABLE_NAME + "(" +
-                ID + "INTEGER PRIMARY KEY AUTOINCREMENT, " + NOMBRE + " TEXT, " + DESCRIPCION +
+        public static final String CREATE_TABLE_EJERCICIOS = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " (" +
+                ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + NOMBRE + " TEXT, " + DESCRIPCION +
                 " TEXT, " + GIF + " TEXT, " + URL_VIDEO + " TEXT, " + QUEMA_CALORIAS + " REAL ,"
                 + TIEMPO_REPETICION + " INTEGER, " + DIFICULTAD + " INTEGER, " + MUSCULO +" TEXT,"
-                + RUIDO + " INTEGER);";
+                + RUIDO + " INTEGER)";
 
         public static final String CONSULTAR_ALL_TABLE = "SELECT * FROM " + TABLE_NAME + ";";
     }

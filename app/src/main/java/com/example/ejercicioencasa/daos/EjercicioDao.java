@@ -32,9 +32,7 @@ public class EjercicioDao {
         registro.put(UtilitiesDatabase.TablaEjercicios.MUSCULO, ejercicio.musuclo);
         registro.put(UtilitiesDatabase.TablaEjercicios.RUIDO, ejercicio.ruido);
 
-        long id = db.insert(UtilitiesDatabase.TablaEjercicios.TABLE_NAME, null, registro);
-        db.close();
-        return id;
+        return db.insert(UtilitiesDatabase.TablaEjercicios.TABLE_NAME, null, registro);
     }
 
     public ArrayList<Ejercicio> getEjercicios(int dificultad, String musculo, int ruido){
@@ -72,7 +70,6 @@ public class EjercicioDao {
                     )
             );
         }
-        db.close();
         cursor.close();
         return  ejercicios;
     }
