@@ -7,4 +7,6 @@
     <string name="info_label">Información</string>
     <string name="wrong_weight_input">Ingrese un peso valido</string>
     <string name="wrong_height_input">Ingrese una altura valida</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

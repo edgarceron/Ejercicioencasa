@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/statistics"
+        android:name="com.example.ejercicioencasa.Statistics"
+        android:label="Statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.ejercicioencasa.Home"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/userInfo"
+        android:name="com.example.ejercicioencasa.UserInfo"
+        android:label="User Info"
+        tools:layout="@layout/fragment_user_info" />
+</navigation>

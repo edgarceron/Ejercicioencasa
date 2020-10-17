@@ -18,4 +18,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SplashScreen.class);
         startActivity(intent);
     }
+
+    BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+    NavController navController = Navigation.findNavController(this,  R.id.fragment3);
+    NavigationUI.setupWithNavController(bottomNavigationView, navController);
 }
