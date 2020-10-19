@@ -27,9 +27,9 @@
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
             android:paddingBottom="7dp"
-            android:text="nombre ejercicio"
+            android:text="@string/nombre_ejercicio"
             android:textAlignment="center"
-            android:textSize="30dp" />
+            android:textSize="30sp" />
 
         <View
             android:id="@+id/divider3"
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Tiempo" />
+                android:text="@string/tiempo" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -74,22 +74,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Repeticiones" />
+                android:text="@string/repeticiones" />
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView8"
+        <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gifContainer"
             android:layout_width="match_parent"
             android:layout_height="221dp"
-            app:srcCompat="@drawable/config" />
+            android:background="@drawable/chest_press"
+            />
 
         <TextView
             android:id="@+id/text_descrip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
-            android:text="Aquí va toda la descripción del ejercicio" />
+            android:text="@string/descripcion_del_ejercicio" />
 
     </LinearLayout>
 
@@ -97,7 +98,7 @@
         android:id="@+id/button_stop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Parar ejercicio"
+        android:text="@string/parar_ejercicio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,10 +109,10 @@
         android:id="@+id/button_youtube"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver en Youtube"
+        android:text="@string/ver_en_youtube"
         app:layout_constraintBottom_toTopOf="@+id/button_stop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:drawableTint="#FF0000"
-        android:drawableLeft="@drawable/ic_baseline_play_circle_filled_24"/>
+        android:drawableStart="@drawable/ic_baseline_play_circle_filled_24"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,7 +21,7 @@ public class HeightInput extends AppCompatActivity {
     }
 
     public void btnNext(View view){
-        EditText alturaET = (EditText) findViewById(R.id.alturaInput);
+        EditText alturaET = findViewById(R.id.alturaInput);
         int altura;
         try {
             altura = Integer.parseInt(alturaET.getText().toString());
@@ -32,7 +32,7 @@ public class HeightInput extends AppCompatActivity {
 
         if (altura > 50){
             AppUtilities.alterInfoUsuario(InfoUsuario.PESO, String.valueOf(altura), context);
-            Intent intent = new Intent(this, GoalSelect.class);
+            Intent intent = new Intent(this, WarmUpActivity.class);
             startActivity(intent);
         }
         else {

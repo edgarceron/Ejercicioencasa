@@ -104,4 +104,13 @@
     <string name="minutes_5">5 minutos</string>
     <string name="minutes_10">10 minutos</string>
     <string name="minutes_15">15 minutos</string>
+    <string name="desea_realizar_calentamiento">¿Desea realizar un calentamiento previo a la rutina?</string>
+    <string name="omitir">Omitir</string>
+    <string name="no_omitir">No omitir</string>
+    <string name="nombre_ejercicio">nombre ejercicio</string>
+    <string name="tiempo">Tiempo</string>
+    <string name="repeticiones">Repeticiones</string>
+    <string name="descripcion_del_ejercicio">Aquí va toda la descripción del ejercicio</string>
+    <string name="parar_ejercicio">Parar ejercicio</string>
+    <string name="ver_en_youtube">Ver en Youtube</string>
 </resources>
