@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".unit_exercise"></activity>
+        <activity
+            android:name=".excercise"
+            android:label="@string/title_activity_excercise"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RoutineTimeInput" />
         <activity android:name=".GoalSelect" />
         <activity android:name=".HeightInput" />
@@ -25,9 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
