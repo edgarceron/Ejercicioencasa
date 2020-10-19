@@ -7,4 +7,7 @@
     <string name="info_label">Información</string>
     <string name="wrong_weight_input">Ingrese un peso valido</string>
     <string name="wrong_height_input">Ingrese una altura valida</string>
+    <string name="minutes_5">5 minutos</string>
+    <string name="minutes_10">10 minutos</string>
+    <string name="minutes_15">15 minutos</string>
 </resources>

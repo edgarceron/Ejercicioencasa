@@ -32,7 +32,7 @@ public class HeightInput extends AppCompatActivity {
 
         if (altura > 50){
             AppUtilities.alterInfoUsuario(InfoUsuario.PESO, String.valueOf(altura), context);
-            Intent intent = new Intent(this, RoutineTimeInput.class);
+            Intent intent = new Intent(this, GoalSelect.class);
             startActivity(intent);
         }
         else {
