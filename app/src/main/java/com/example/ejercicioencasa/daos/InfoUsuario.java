@@ -10,6 +10,7 @@ public class InfoUsuario {
     public static final String AMIGABLE = "amigable";
     public static final String OBJETIVO = "objetivo";
     public static final String CALENTAMIENTO = "calentamiento";
+    public static final String DIFICULTAD = "dificultad";
 
     public InfoUsuario(String codigo, String valor) {
         this.codigo = codigo;

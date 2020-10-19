@@ -80,9 +80,9 @@ public class EjercicioDao {
                 UtilitiesDatabase.TablaEjercicios.TIEMPO_REPETICION
         };
         String parametros =
-                UtilitiesDatabase.TablaEjercicios.DIFICULTAD + "? ," +
-                UtilitiesDatabase.TablaEjercicios.MUSCULO + "? ," +
-                UtilitiesDatabase.TablaEjercicios.RUIDO + "? ,";
+                UtilitiesDatabase.TablaEjercicios.DIFICULTAD + "=? ," +
+                UtilitiesDatabase.TablaEjercicios.MUSCULO + "=? ," +
+                UtilitiesDatabase.TablaEjercicios.RUIDO + "=? ,";
         String[] argumentos = new String[]{
                 String.valueOf(dificultad), musculo, String.valueOf(ruido)};
         Cursor cursor = db.query(UtilitiesDatabase.TablaEjercicios.TABLE_NAME, campos, parametros,

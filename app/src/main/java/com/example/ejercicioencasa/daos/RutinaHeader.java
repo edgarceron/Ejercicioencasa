@@ -14,6 +14,11 @@ public class RutinaHeader {
         this.estado = estado;
     }
 
+    public RutinaHeader(int duracion, int estado) {
+        this.duracion = duracion;
+        this.estado = estado;
+    }
+
     public int getId() {
         return id;
     }

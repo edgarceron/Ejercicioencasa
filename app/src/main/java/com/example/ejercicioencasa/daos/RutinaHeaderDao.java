@@ -9,15 +9,69 @@ import com.example.ejercicioencasa.databasehelper.DatabaseOpenHelper;
 import com.example.ejercicioencasa.databasehelper.UtilitiesDatabase;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class RutinaHeaderDao {
 
     private DatabaseOpenHelper databaseOpenHelper;
     private SQLiteDatabase db;
+    private EjercicioDao ejercicioDao;
+    private InfoUsuarioDao infoUsuarioDao;
+    private RutinaBodyDao rutinaBodyDao;
 
     public RutinaHeaderDao(Context context){
         databaseOpenHelper = new DatabaseOpenHelper(context);
         db = databaseOpenHelper.getWritableDatabase();
+        ejercicioDao = new EjercicioDao(context);
+        infoUsuarioDao = new InfoUsuarioDao(context);
+        rutinaBodyDao = new RutinaBodyDao(context);
+    }
+
+    public int crearRutina(int duracion){
+        String amigable = infoUsuarioDao.consultarinfo(InfoUsuario.AMIGABLE).valor;
+        String objetivo = infoUsuarioDao.consultarinfo(InfoUsuario.OBJETIVO).valor;
+        String calentamiento = infoUsuarioDao.consultarinfo(InfoUsuario.CALENTAMIENTO).valor;
+        String dificultad = infoUsuarioDao.consultarinfo(InfoUsuario.DIFICULTAD).valor;
+
+        duracion = duracion * 60;
+
+        RutinaHeader rutinaHeader = new RutinaHeader(duracion, 0);
+        rutinaHeader.setId((int) insertRutinaHeader(rutinaHeader));
+
+        ArrayList<Ejercicio> ejercicios = ejercicioDao.getEjercicios(
+                Integer.parseInt(dificultad), objetivo, Integer.parseInt(amigable));
+
+        ArrayList<Ejercicio> calentamientos = new ArrayList<>();
+        if(calentamiento.equals("Si")){
+            calentamientos = ejercicioDao.getEjercicios(
+                    Integer.parseInt(dificultad), objetivo, Integer.parseInt(amigable));
+        }
+
+        ArrayList<RutinaBody> rutinaBodies = new ArrayList<>();
+        int totalSeconds = 0;
+        int seleccionado;
+        int size = calentamientos.size();
+        java.util.Random random = new Random();
+
+        if (size > 0){
+            seleccionado = random.nextInt(size);
+            Ejercicio ejercicioCalentamiento = calentamientos.get(seleccionado);
+            rutinaBodies.add(new RutinaBody(15, rutinaHeader, ejercicioCalentamiento, 0));
+            totalSeconds += 15 * ejercicioCalentamiento.tiempoRepeticion;
+        }
+
+        while(totalSeconds < duracion && ejercicios.size() > 0){
+            seleccionado = random.nextInt(ejercicios.size());
+            totalSeconds += 15 * ejercicios.get(seleccionado).tiempoRepeticion;
+            rutinaBodies.add(new RutinaBody(15, rutinaHeader, ejercicios.get(seleccionado), 0));
+            ejercicios.remove(seleccionado);
+        }
+
+        for(int i = 0; i < rutinaBodies.size(); i++){
+            rutinaBodyDao.insertRutinaBody(rutinaBodies.get(i));
+        }
+
+        return rutinaHeader.id;
     }
 
     public long insertRutinaHeader(RutinaHeader rutinaHeader){
