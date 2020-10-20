@@ -9,7 +9,7 @@ import android.view.View;
 
 public class routine extends AppCompatActivity {
     private Chronometer chronometer;
-    private long routine_time;
+    public long routine_time;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

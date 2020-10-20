@@ -40,7 +40,7 @@ public class UnitExercise extends AppCompatActivity {
         gifView.setBackgroundResource(getResources().getIdentifier(gif, "drawable", getPackageName()));
     }
 
-    public void onFinsih(){
+    public void onFinish(){
         //Ir a la actividad de descanso
     }
 }
