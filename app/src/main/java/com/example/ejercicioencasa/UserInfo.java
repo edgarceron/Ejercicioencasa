@@ -26,7 +26,7 @@ public class UserInfo extends AppCompatActivity {
         TextView userSexo = findViewById(R.id.user_sexo);
         userSexo.setText(sexo);
 
-        
+
     }
 
     public void cambiarInfoBtn(View view){
