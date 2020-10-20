@@ -102,7 +102,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
                         "hacia la derecha y vuelva a la posición de sentadilla.\n" + "5. Repita hasta completar" +
                         " el conjunto.","jump_squat",
                 "https://www.youtube.com/watch?v=On1Uf0xCdp8&ab_channel=SWATHealth",
-                0.65f, 3, 2, PIERNAS, 0);
+                0.65f, 3, 1, PIERNAS, 0);
 
         insertEjercicio(db, "SENTADILLA DE OSO", "1. Póngase de rodillas, con las " +
                         "muñecas debajo de los hombros y las rodillas separadas al ancho de las caderas.\n" +
@@ -119,13 +119,13 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
                         " y luego cambie, girando en sentido antihorario.\n" + "5. Baje ambas piernas, cambie " +
                         "de lado y repita.","circles_sky",
                 "https://www.youtube.com/watch?v=N5tz2ZYBWSk&ab_channel=NibiruLLC",
-                0.45f, 3, 2, PIERNAS, 0);
+                0.45f, 3, 1, PIERNAS, 0);
         insertEjercicio(db, "SENTADILLA COSSACK", "1. Párese con los pies en una " +
                         "posición amplia y con los dedos de los pies apuntando hacia los lados.\n" +
                         "2. Póngase en cuclillas hacia la derecha, bajando tanto como le resulte cómodo.\n" +
                         "3. Regrese a la posición inicial y repita en el lado izquierdo.","cossack_squat",
                 "https://www.youtube.com/watch?v=dhDjKmTX8tU&ab_channel=FunctionalBodybuilding",
-                0.6f, 3, 2, PIERNAS, 0);
+                0.6f, 3, 3, PIERNAS, 0);
         insertEjercicio(db, "BURPEES", "1. Párese derecho con los pies separados " +
                         "a la altura de los hombros.\n" + "2. Póngase en cuclillas y coloque las manos " +
                         "delante de los pies.\n" + "3. Salte hacia atrás hasta que sus piernas estén " +

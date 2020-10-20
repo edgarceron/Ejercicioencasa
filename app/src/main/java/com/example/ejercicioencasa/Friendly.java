@@ -35,10 +35,10 @@ public class Friendly extends AppCompatActivity {
     }
 
     public void btnNo(View view) {
-        setFriendly(0);
+        setFriendly(1);
     }
 
     public void btnYes(View view) {
-        setFriendly(1);
+        setFriendly(0);
     }
 }
