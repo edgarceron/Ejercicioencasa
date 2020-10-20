@@ -27,5 +27,5 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
     NavController navController = Navigation.findNavController(this,  R.id.fragment3);
-    NavigationUI.setupWithNavController(bottomNavigationView, navController);
+    //NavigationUI.setupWithNavController(bottomNavigationView, navController);
 }

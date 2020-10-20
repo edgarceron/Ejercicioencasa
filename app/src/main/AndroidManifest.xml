@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".WarmUpActivity" />
-        <activity android:name=".unit_exercise" />
+        <activity android:name=".UnitExercise" />
         <activity
             android:name=".excercise"
             android:label="@string/title_activity_excercise"
