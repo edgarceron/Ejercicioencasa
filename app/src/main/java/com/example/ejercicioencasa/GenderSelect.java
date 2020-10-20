@@ -33,7 +33,7 @@ public class GenderSelect extends AppCompatActivity {
     }
 
     public void btnNext(View view){
-        Intent intent = new Intent(this, WeightInput.class);
+        Intent intent = new Intent(this, HeightInput.class);
         startActivity(intent);
     }
 }

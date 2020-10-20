@@ -7,40 +7,40 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="289dp"
-        android:layout_marginEnd="45dp"
-        android:text="¿Desea realizar un calentamiento previo a la rutina?"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="123dp"
+        android:text="¿Necesita que sea amigable?"
+        app:layout_constraintBottom_toTopOf="@+id/buttonYes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnNo"
+        android:id="@+id/buttonYes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="89dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="300dp"
-        android:onClick="btnOmit"
-        android:text="Omitir"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="304dp"
+        android:onClick="btnYes"
+        android:text="Si"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnNext"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/btnNext"
+        android:id="@+id/buttonNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="304dp"
         android:onClick="btnNo"
-        android:text="No omitir"
+        android:text="No"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintEnd_toStartOf="@+id/buttonYes"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
