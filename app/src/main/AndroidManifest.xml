@@ -16,6 +16,9 @@
         android:theme="@style/AppTheme" >
         <activity android:name=".muscular" >
         </activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".dificulty" />
+        <activity android:name=".muscular" />
         <activity android:name=".RoutineTimeInput" />
         <activity android:name=".GoalSelect" />
         <activity android:name=".HeightInput" />
@@ -25,7 +28,7 @@
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_splash_screen"
-            android:theme="@style/FullscreenTheme">
+            android:theme="@style/FullscreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
