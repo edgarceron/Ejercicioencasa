@@ -44,7 +44,7 @@ public class RutinaHeaderDao {
         ArrayList<Ejercicio> calentamientos = new ArrayList<>();
         if(calentamiento.equals("Si")){
             calentamientos = ejercicioDao.getEjercicios(
-                    Integer.parseInt(dificultad), objetivo, Integer.parseInt(amigable));
+                    Integer.parseInt(dificultad), "Calentamiento", Integer.parseInt(amigable));
         }
 
         ArrayList<RutinaBody> rutinaBodies = new ArrayList<>();
@@ -111,7 +111,7 @@ public class RutinaHeaderDao {
         return rutinaHeader;
     }
 
-    public ArrayList<RutinaHeader> consultarInfoUsuario(){
+    public ArrayList<RutinaHeader> consultarAllHeaders(){
         ArrayList<RutinaHeader> lista = new ArrayList<>();
         Cursor cursor = db.rawQuery(UtilitiesDatabase.TablaRutinaHeader.CONSULTAR_ALL_TABLE, null);
         while (cursor.moveToNext()){

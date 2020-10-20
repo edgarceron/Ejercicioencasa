@@ -20,6 +20,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
     public static String TRICEPS = "Triceps";
     public static String PECHO = "Pecho";
     public static String ESPALDA = "Espalda";
+    public static String CALENTAMIENTO = "Calentamiento";
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -27,6 +28,12 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
         db.execSQL(UtilitiesDatabase.TablaEjercicios.CREATE_TABLE_EJERCICIOS);
         db.execSQL(UtilitiesDatabase.TablaRutinaHeader.CREATE_TABLE_RUTINA_HEADER);
         db.execSQL(UtilitiesDatabase.TablaRutinaBody.CREATE_TABLE_RUTINA_BODY);
+
+        insertEjercicio(db, "Trotar", "Trotar","trotar",
+                "https://www.youtube.com/watch?v=GQJRuL2gqyk", 1f, 10, 1,
+                CALENTAMIENTO, 0);
+
+
         insertEjercicio(db, "Plank bird dog", "1. Start on your hands and knees" +
                         " with the hands under the shoulders and the knees under the hips.\n" +
                         "2. Extend one leg and the opposite arm at the same time.\n" +
