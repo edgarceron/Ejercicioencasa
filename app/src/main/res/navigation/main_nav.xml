@@ -15,9 +15,10 @@
         android:name="com.example.ejercicioencasa.Home"
         android:label="Home"
         tools:layout="@layout/fragment_home" />
-    <fragment
+    <activity
         android:id="@+id/userInfo"
         android:name="com.example.ejercicioencasa.UserInfo"
-        android:label="User Info"
-        tools:layout="@layout/fragment_user_info" />
+        android:label="activity_user_info"
+        tools:layout="@layout/activity_user_info" />
+
 </navigation>
