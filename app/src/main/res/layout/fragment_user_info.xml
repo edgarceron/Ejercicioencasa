@@ -31,9 +31,8 @@
                 android:text="Información de Usuario"
                 android:textAlignment="center"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="20sp"
-                android:background=""
-                android:shadowColor="@color/colorPrimary"/>
+                android:textSize="20dp"
+                android:background=""/>
 
             <LinearLayout
                 android:layout_width="match_parent"

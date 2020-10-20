@@ -45,7 +45,8 @@
                     android:id="@+id/button_female"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/Female" />
+                    android:onClick="btnFemale"
+                    app:srcCompat="@drawable/female_icon" />
             </LinearLayout>
 
             <LinearLayout
@@ -57,7 +58,8 @@
                     android:id="@+id/button_male"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/Male" />
+                    android:onClick="btnMale"
+                    app:srcCompat="@drawable/male_icon" />
             </LinearLayout>
         </LinearLayout>
 

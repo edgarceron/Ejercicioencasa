@@ -78,7 +78,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/peso"
+                    android:id="@+id/alturaInput"
                     android:layout_width="99dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -91,7 +91,7 @@
             android:id="@+id/button_tiempo_rut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Siguiente" />
+            android:text="@string/siguiente_label" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

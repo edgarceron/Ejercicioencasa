@@ -6,66 +6,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="289dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="75dp"
+        android:text="@string/desea_realizar_calentamiento"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="wrap_content"
-            android:layout_height="139dp"
-            app:srcCompat="@drawable/rutina" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/omitir"
+        android:onClick="btnOmitir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-            android:text="Puedes elegir estas condiciones:"
-            android:textAlignment="center"
-            android:textColor="@color/colorSecondaryText"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="450dp"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_calentamiento"
-                    android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:text="Sí al calentamiento" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_amigable"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Amigable con los vecinos (poco ruidosos)" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/button_inicio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Siguiente" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/no_omitir"
+        android:onClick="btnNoOmitir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

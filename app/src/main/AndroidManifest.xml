@@ -17,8 +17,8 @@
         <activity android:name=".muscular" >
         </activity>
         android:theme="@style/AppTheme">
-        <activity android:name=".dificulty" />
-        <activity android:name=".muscular" />
+        <activity android:name=".Friendly" />
+        <activity android:name=".Difficulty" />
         <activity android:name=".RoutineTimeInput" />
         <activity android:name=".GoalSelect" />
         <activity android:name=".HeightInput" />

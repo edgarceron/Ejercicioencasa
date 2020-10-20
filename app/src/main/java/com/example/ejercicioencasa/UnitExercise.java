@@ -11,7 +11,8 @@ import pl.droidsonroids.gif.GifTextView;
 public class UnitExercise extends AppCompatActivity {
 
     private String url;
-
+    int id_rutina_body;
+    int id_rutina_header;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +22,8 @@ public class UnitExercise extends AppCompatActivity {
         String descripcion = intent.getStringExtra("descripcion");
         String gif = intent.getStringExtra("gif");
         this.url = intent.getStringExtra("url");
-        int id_rutina_body = intent.getIntExtra("id",0);
-        int id_rutina_header = intent.getIntExtra("id_rutina_header",0);
+        this.id_rutina_body = intent.getIntExtra("id",0);
+        this.id_rutina_header = intent.getIntExtra("id_rutina_header",0);
         int repeticiones = intent.getIntExtra("repeticiones",0);
         int tiempo = intent.getIntExtra("tiempo",0);
 
@@ -33,7 +34,7 @@ public class UnitExercise extends AppCompatActivity {
         TextView textTime = findViewById(R.id.text_time);
         textTime.setText(tiempo);
         TextView textRepeat = findViewById(R.id.text_repeat);
-        textTime.setText(tiempo);
+        textRepeat.setText(repeticiones);
 
         GifTextView gifView = findViewById(R.id.gifContainer);
         gifView.setBackgroundResource(getResources().getIdentifier(gif, "drawable", getPackageName()));

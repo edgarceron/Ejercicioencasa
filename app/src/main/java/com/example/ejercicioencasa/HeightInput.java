@@ -1,11 +1,13 @@
 package com.example.ejercicioencasa;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 
 import com.example.ejercicioencasa.daos.InfoUsuario;
@@ -16,6 +18,11 @@ public class HeightInput extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        ActionBar actionBar = getSupportActionBar();
+
+        assert actionBar != null;
+        actionBar.hide();
         setContentView(R.layout.activity_height_input);
         context = getApplicationContext();
     }

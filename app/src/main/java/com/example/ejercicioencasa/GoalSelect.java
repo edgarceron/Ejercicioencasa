@@ -15,7 +15,7 @@ public class GoalSelect extends AppCompatActivity {
     }
 
     public void btnSig(View view) {
-        Intent intent = new Intent(this, WarmUp.class);
+        Intent intent = new Intent(this, WarmUpActivity.class);
         startActivity(intent);
     }
 
