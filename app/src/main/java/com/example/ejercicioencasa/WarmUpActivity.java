@@ -34,7 +34,10 @@ public class WarmUpActivity extends AppCompatActivity {
         else {
             AppUtilities.alterInfoUsuario(InfoUsuario.CALENTAMIENTO, "0", context);
         }
-        Intent intent = new Intent(this, GoalSelect.class);
+
+        //AppUtilities.alterInfoUsuario(InfoUsuario.GUARDADO, "1", context);
+
+        Intent intent = new Intent(this, RoutineTimeInput.class);
         startActivity(intent);
     }
 }

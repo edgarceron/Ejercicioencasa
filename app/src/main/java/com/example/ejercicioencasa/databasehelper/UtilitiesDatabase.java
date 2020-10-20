@@ -63,7 +63,7 @@ public class UtilitiesDatabase {
                 ESTADO + " INTEGER, " +
                 "FOREIGN KEY (" + HEADER + ") REFERENCES " + TablaRutinaHeader.TABLE_NAME + "(" +
                 TablaRutinaHeader.ID + "), FOREIGN KEY(" + EJERCICIO + ") REFERENCES " + TablaEjercicios.TABLE_NAME +
-                " (" + TablaEjercicios.ID + ")";
+                " (" + TablaEjercicios.ID + "))";
 
         public static final String CONSULTAR_ALL_TABLE = "SELECT * FROM " + TABLE_NAME + ";";
     }

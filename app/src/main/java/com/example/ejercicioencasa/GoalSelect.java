@@ -28,9 +28,8 @@ public class GoalSelect extends AppCompatActivity {
         String textRadio = (String) radioButton.getText();
 
         AppUtilities.alterInfoUsuario(InfoUsuario.OBJETIVO, textRadio, context);
-        AppUtilities.alterInfoUsuario(InfoUsuario.GUARDADO, "1", context);
 
-        Intent intent = new Intent(this, UserInfo.class);
+        Intent intent = new Intent(this, WarmUpActivity.class);
         startActivity(intent);
     }
 
