@@ -80,8 +80,8 @@ public class EjercicioDao {
                 UtilitiesDatabase.TablaEjercicios.TIEMPO_REPETICION
         };
         String parametros =
-                UtilitiesDatabase.TablaEjercicios.DIFICULTAD + "= ? ," +
-                UtilitiesDatabase.TablaEjercicios.MUSCULO + "= ? ," +
+                UtilitiesDatabase.TablaEjercicios.DIFICULTAD + "= ? AND " +
+                UtilitiesDatabase.TablaEjercicios.MUSCULO + "= ? AND " +
                 UtilitiesDatabase.TablaEjercicios.RUIDO + "= ? ";
 
         String[] argumentos = new String[]{
