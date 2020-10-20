@@ -78,8 +78,23 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
         insertEjercicio(db, "BURPEES", "1. Párese derecho con los pies separados a la altura de los hombros.\n" + "2. Póngase en cuclillas y coloque las manos delante de los pies.\n" + "3. Salte hacia atrás hasta que sus piernas estén completamente extendidas y su cuerpo esté en posición de tabla.\n" + "4. Haga una lagartija, salte hacia adelante y luego empuje con los talones para regresar a la posición inicial.\n" + "5. Repita hasta completar el conjunto.","burpees",
                 "https://www.youtube.com/watch?v=Uy2nUNX38xE&ab_channel=Foroatletismo", 0.65f, 3, 2,
                 PIERNAS, 0);
+        insertEjercicio(db, "PULSADORES DE TOBILLO", "1. Comience en una posición de lagartija, con las manos debajo de los hombros y las piernas extendidas hacia atrás.\n" + "2. Empiece a doblar los codos y baje el pecho hasta que esté justo por encima del suelo.\n" + "3. Mientras empuja hacia la posición inicial, levante las caderas y toque el tobillo izquierdo con la mano derecha.\n" + "4. Regrese a la posición de lagartija y repita en el lado opuesto.\n" + "5. Siga alternando lados hasta que el conjunto esté completo.","ankle_tap",
+                "https://www.youtube.com/watch?v=CSUIqyd89-A&ab_channel=ForoatletismoForoatletismo", 0.65f, 3, 2,
+                PECHO, 0);
+        insertEjercicio(db, "PUSH UPS HINDÚ", "1. Con las manos separadas a la altura de los hombros, el cuerpo en forma de V y los pies separados a la altura de las caderas.\n" + "2. Doble los codos y baje el pecho hasta que esté justo por encima del suelo, adoptando una postura de tabla baja.\n" + "3. Estire los brazos, levante el torso y adopte la postura del perro hacia arriba.\n" + "4. Baja el torso, levanta las caderas y vuelve a la postura del perro boca abajo.\n" + "5. Repita hasta completar el conjunto.","hindu_push",
+                "https://www.youtube.com/watch?v=o4SKwIg3RMY&ab_channel=VeronicaTudor", 0.7f, 3, 2,
+                PECHO, 0);
+        insertEjercicio(db, "EMPUJE ASIMÉTRICO HACIA ARRIBA", "1. Comience en una posición de lagartija con las piernas extendidas hacia atrás y las manos debajo de los hombros.\n" + "2. Coloque su antebrazo izquierdo sobre la colchoneta, con el codo directamente debajo del hombro, y comience a doblar el codo derecho hasta que su pecho esté justo por encima del piso.\n" + "3. Vuelva a la posición inicial, repita y luego cambie de lado.","asymmetrical_push",
+                "https://www.youtube.com/watch?v=iAfKvLJBAOM&ab_channel=Musqle", 0.45f, 3, 2,
+                PECHO, 0);
+        insertEjercicio(db, "FLEXIONES SPIDERMAN", "1. Coloque las manos debajo de los hombros y extienda las piernas hacia atrás.\n" + "2. Empiece a doblar los codos y, al mismo tiempo, lleve la rodilla izquierda al hombro izquierdo.\n" + "3. Empuje hacia arriba y vuelva a la posición inicial.\n" + "4. Repita en el lado derecho hasta completar el fraguado.","spiderman_push",
+                "https://www.youtube.com/watch?v=DYONORexgpY&ab_channel=LivestrongWoman", 0.65f, 3, 2,
+                PECHO, 0);
+        insertEjercicio(db, "FLEXIONES DECLINADAS", "1. Empiece en posición de plancha, con las muñecas debajo de los hombros y los pies separados a la altura de las caderas, y coloque los pies sobre un escalón.\n" + "2. Doble los codos y baje el pecho hasta que esté justo por encima del suelo.\n" + "3. Vuelva a la posición inicial y repita hasta completar la serie.","decline_push",
+                "https://www.youtube.com/watch?v=5QFjmotLfW4&ab_channel=shawnadair", 0.55f, 3, 2,
+                PECHO, 0);
     }
-    
+
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
