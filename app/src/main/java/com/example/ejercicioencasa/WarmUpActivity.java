@@ -30,16 +30,14 @@ public class WarmUpActivity extends AppCompatActivity {
     public void setWarnUp(int type){
         if(type == 1){
             AppUtilities.alterInfoUsuario(InfoUsuario.CALENTAMIENTO, "1", context);
-            Intent intent = new Intent(this, RoutineTimeInput.class);
-            startActivity(intent);
         }
         else {
             AppUtilities.alterInfoUsuario(InfoUsuario.CALENTAMIENTO, "0", context);
         }
 
-        //AppUtilities.alterInfoUsuario(InfoUsuario.GUARDADO, "1", context);
+        AppUtilities.alterInfoUsuario(InfoUsuario.GUARDADO, "1", context);
 
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

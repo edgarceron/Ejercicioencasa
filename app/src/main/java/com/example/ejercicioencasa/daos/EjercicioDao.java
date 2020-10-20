@@ -44,9 +44,12 @@ public class EjercicioDao {
                 UtilitiesDatabase.TablaEjercicios.GIF,
                 UtilitiesDatabase.TablaEjercicios.URL_VIDEO,
                 UtilitiesDatabase.TablaEjercicios.QUEMA_CALORIAS,
-                UtilitiesDatabase.TablaEjercicios.TIEMPO_REPETICION
+                UtilitiesDatabase.TablaEjercicios.TIEMPO_REPETICION,
+                UtilitiesDatabase.TablaEjercicios.DIFICULTAD,
+                UtilitiesDatabase.TablaEjercicios.MUSCULO,
+                UtilitiesDatabase.TablaEjercicios.RUIDO,
         };
-        String parametros = UtilitiesDatabase.TablaEjercicios.ID + "?";
+        String parametros = UtilitiesDatabase.TablaEjercicios.ID + "=?";
         String[] argumentos = new String[]{String.valueOf(id)};
         Cursor cursor = db.query(UtilitiesDatabase.TablaEjercicios.TABLE_NAME, campos, parametros,
                 argumentos, null, null, null) ;
@@ -77,7 +80,10 @@ public class EjercicioDao {
                 UtilitiesDatabase.TablaEjercicios.GIF,
                 UtilitiesDatabase.TablaEjercicios.URL_VIDEO,
                 UtilitiesDatabase.TablaEjercicios.QUEMA_CALORIAS,
-                UtilitiesDatabase.TablaEjercicios.TIEMPO_REPETICION
+                UtilitiesDatabase.TablaEjercicios.TIEMPO_REPETICION,
+                UtilitiesDatabase.TablaEjercicios.DIFICULTAD,
+                UtilitiesDatabase.TablaEjercicios.MUSCULO,
+                UtilitiesDatabase.TablaEjercicios.RUIDO,
         };
         String parametros =
                 UtilitiesDatabase.TablaEjercicios.DIFICULTAD + "= ? AND " +

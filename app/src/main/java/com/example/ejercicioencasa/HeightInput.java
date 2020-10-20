@@ -12,6 +12,7 @@ import android.widget.EditText;
 
 import com.example.ejercicioencasa.daos.InfoUsuario;
 import com.example.ejercicioencasa.utilities.AppUtilities;
+import com.example.ejercicioencasa.utilities.DialogInfo;
 
 public class HeightInput extends AppCompatActivity {
     public Context context;

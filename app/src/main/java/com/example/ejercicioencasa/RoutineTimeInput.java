@@ -9,10 +9,14 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.example.ejercicioencasa.daos.Ejercicio;
 import com.example.ejercicioencasa.daos.InfoUsuario;
+import com.example.ejercicioencasa.daos.RutinaBody;
+import com.example.ejercicioencasa.daos.RutinaBodyDao;
 import com.example.ejercicioencasa.daos.RutinaHeader;
 import com.example.ejercicioencasa.daos.RutinaHeaderDao;
 import com.example.ejercicioencasa.utilities.AppUtilities;
+import com.example.ejercicioencasa.utilities.DialogInfo;
 
 import java.util.ArrayList;
 
@@ -45,8 +49,17 @@ public class RoutineTimeInput extends AppCompatActivity {
         RutinaHeaderDao rutinaHeaderDao = new RutinaHeaderDao(context);
         int idRutina =  rutinaHeaderDao.crearRutina(tiempo);
 
-        //TODO Guardar tiempo de rutina
-        Intent intent = new Intent(this, UserInfo.class);
-        startActivity(intent);
+        RutinaBodyDao rutinaBodyDao = new RutinaBodyDao(context);
+        Intent intent = new Intent(this, UnitExercise.class);
+        ArrayList<RutinaBody> pendientes = rutinaBodyDao.getPendientes(idRutina);
+        if(pendientes.size() > 0){
+            RutinaBody siguiente = pendientes.get(0);
+            intent = AppUtilities.putInfoIntent(intent, siguiente, idRutina);
+            startActivity(intent);
+        }
+        else {
+            DialogInfo dialogInfo = new DialogInfo("No se encontraron ejercicios en la base de datos, cambie de objetivo");
+            dialogInfo.show(getSupportFragmentManager(), "End");
+        }
     }
 }

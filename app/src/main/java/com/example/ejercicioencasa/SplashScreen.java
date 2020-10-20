@@ -37,7 +37,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 Intent intent;
                 if(verifyUserData()){
-                    intent = new Intent(SplashScreen.this, UserInfo.class);
+                    intent = new Intent(SplashScreen.this, MainActivity.class);
                 }
                 else {
                     intent = new Intent(SplashScreen.this, GenderSelect.class);
@@ -52,7 +52,6 @@ public class SplashScreen extends AppCompatActivity {
         InfoUsuarioDao infoUsuarioDao = new InfoUsuarioDao(context);
         InfoUsuario infoUsuario;
         infoUsuario = infoUsuarioDao.consultarInfo(InfoUsuario.GUARDADO);
-        if (infoUsuario != null && infoUsuario.getValor().equals("1")) return true;
-        return false;
+        return infoUsuario != null && infoUsuario.getValor().equals("1");
     }
 }

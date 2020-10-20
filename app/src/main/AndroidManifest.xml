@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
+        <activity android:name=".TestingActivity"></activity>
         <activity android:name=".rest" />
         <activity android:name=".UserInfo" />
         <activity android:name=".WarmUpActivity" />
