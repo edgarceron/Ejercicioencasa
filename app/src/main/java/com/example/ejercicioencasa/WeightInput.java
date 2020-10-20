@@ -34,7 +34,7 @@ public class WeightInput extends AppCompatActivity {
 
         if (peso > 30){
             AppUtilities.alterInfoUsuario(InfoUsuario.PESO, String.valueOf(peso), context);
-            Intent intent = new Intent(this, HeightInput.class);
+            Intent intent = new Intent(this, RoutineTimeInput.class);
             startActivity(intent);
         }
         else {

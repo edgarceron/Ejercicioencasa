@@ -36,7 +36,7 @@ public class RoutineTimeInput extends AppCompatActivity {
         }
 
         //TODO Guardar tiempo de rutina
-        Intent intent = new Intent(this, GoalSelect.class);
+        Intent intent = new Intent(this, Friendly.class);
         startActivity(intent);
     }
 }

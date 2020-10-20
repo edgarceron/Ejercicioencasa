@@ -14,5 +14,9 @@ public class GoalSelect extends AppCompatActivity {
         setContentView(R.layout.activity_goal_select);
     }
 
+    public void btnSig(View view) {
+        Intent intent = new Intent(this, WarmUp.class);
+        startActivity(intent);
+    }
 
 }
