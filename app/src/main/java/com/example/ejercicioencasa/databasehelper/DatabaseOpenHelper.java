@@ -19,6 +19,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
     private static String BICEPS = "Biceps";
     private static String TRICEPS = "Triceps";
     private static String PECHO = "Pecho";
+    private static String ESPALDA = "Espalda";
 
 
 
