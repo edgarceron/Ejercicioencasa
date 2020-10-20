@@ -6,56 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".GoalSelect">
 
-    <CheckBox
-        android:id="@+id/espaldaCheck"
-        android:layout_width="166dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="450dp"
-        android:text="Espalda"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <CheckBox
-        android:id="@+id/piernasCheck"
-        android:layout_width="166dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginBottom="500dp"
-        android:text="Piernas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <CheckBox
-        android:id="@+id/abdomenCheck"
-        android:layout_width="166dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="400dp"
-        android:text="Abdomen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <CheckBox
-        android:id="@+id/brazosCheck"
-        android:layout_width="166dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginBottom="350dp"
-        android:text="Brazos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="113dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="108dp"
-        android:text="Escoger rutina(s) de ejercicios"
+        android:text="Escoger rutina de ejercicios"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,19 +23,56 @@
         android:id="@+id/btnSiguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="132dp"
         android:text="@string/siguiente_label"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <CheckBox
-        android:id="@+id/pectoralesCheck"
-        android:layout_width="166dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="300dp"
-        android:text="Pectorales"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <RadioGroup
+        android:layout_width="122dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/radioBrazos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brazos" />
+
+        <RadioButton
+            android:id="@+id/radioPierna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Piernas" />
+
+        <RadioButton
+            android:id="@+id/radioAbdomen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abdomen" />
+
+        <RadioButton
+            android:id="@+id/radioEspalda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Espalda" />
+
+        <RadioButton
+            android:id="@+id/radioPectorales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pectorales" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

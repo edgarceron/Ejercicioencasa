@@ -11,6 +11,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".WarmUpActivity" />
         <activity android:name=".UnitExercise" />
+        android:theme="@style/AppTheme" >
+        <activity android:name=".muscular" >
+        </activity>
         <activity
             android:name=".excercise"
             android:label="@string/title_activity_excercise"

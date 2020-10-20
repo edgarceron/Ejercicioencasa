@@ -17,16 +17,207 @@
             android:layout_height="142dp"
             android:src="@drawable/biblioteca" />
 
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textView6"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="TextView" />
-        </TableRow>
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="Información de Usuario"
+                android:textAlignment="center"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="20dp"
+                android:background=""/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="456dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="212dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Sexo:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Altura (cm):"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Peso (Kg):"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Calentamiento:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Amigable con vecinos:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Dificultad Elegida:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Grupo Muscular de Enfoque:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_sexo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="asdasd"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorThirdText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/user_altura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="asdasd"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorThirdText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/user_peso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="asdasd"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorThirdText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/user_calent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="asdasd"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorThirdText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/user_amig"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="asdasd"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorThirdText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/user_dificult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="asdasd"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorThirdText"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/user_muscular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="asdasd"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorThirdText"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </LinearLayout>
 
     </LinearLayout>
 </FrameLayout>
