@@ -14,7 +14,7 @@
         android:layout_marginTop="237dp"
         android:layout_marginEnd="115dp"
         android:layout_marginBottom="123dp"
-        android:text="¿Necesita que sea amigable?"
+        android:text="@string/amigable_vecinos"
         app:layout_constraintBottom_toTopOf="@+id/buttonYes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

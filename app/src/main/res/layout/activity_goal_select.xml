@@ -10,12 +10,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="113dp"
-        android:layout_marginTop="155dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginTop="148dp"
         android:text="Escoger rutina de ejercicios"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,32 +20,28 @@
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="159dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="132dp"
         android:onClick="btnSig"
         android:text="@string/siguiente_label"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGoal" />
 
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:id="@+id/radioGroupGoal"
         android:layout_width="122dp"
-        android:layout_height="191dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="82dp"
-        android:layout_marginEnd="145dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="228dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/radioBrazos"
+            android:id="@+id/radioAbdomen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Brazos" />
+            android:text="Abdomen" />
 
         <RadioButton
             android:id="@+id/radioPierna"
@@ -57,10 +50,28 @@
             android:text="Piernas" />
 
         <RadioButton
-            android:id="@+id/radioAbdomen"
+            android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Abdomen" />
+            android:text="Gluteo" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hombro" />
+
+        <RadioButton
+            android:id="@+id/radioBrazos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biceps" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Triceps" />
 
         <RadioButton
             android:id="@+id/radioEspalda"
@@ -72,7 +83,8 @@
             android:id="@+id/radioPectorales"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pectorales" />
+            android:text="Pecho" />
+
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

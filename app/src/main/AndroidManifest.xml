@@ -11,11 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
+        <activity android:name=".UserInfo"></activity>
         <activity android:name=".WarmUpActivity" />
         <activity android:name=".UnitExercise" />
-        android:theme="@style/AppTheme" >
-        <activity android:name=".muscular" >
-        </activity>
+        <activity android:name=".muscular"></activity>
+        <activity android:name=".Friendly" />
+        <activity android:name=".Difficulty" />
         <activity android:name=".RoutineTimeInput" />
         <activity android:name=".GoalSelect" />
         <activity android:name=".HeightInput" />
