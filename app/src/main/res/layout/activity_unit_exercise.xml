@@ -38,10 +38,10 @@
             android:background="?android:attr/listDivider" />
 
         <LinearLayout
-            android:paddingTop="7dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="7dp">
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -89,6 +89,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
             android:text="Aquí va toda la descripción del ejercicio" />
 
     </LinearLayout>

@@ -4,50 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
     tools:context=".GenderSelect">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="180dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="160dp"
-        android:background="@color/colorAccent"
-        android:drawableStart="@drawable/male_icon"
-        android:onClick="btnMale"
-        android:text="@string/hombre_label"
-        android:textColor="@color/colorTextIcons"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="180dp"
-        android:layout_height="220dp"
-        android:layout_marginTop="160dp"
-        android:background="@color/colorAccent"
-        android:drawableStart="@drawable/female_icon"
-        android:onClick="btnFemale"
-        android:text="@string/mujer_label"
-        android:textColor="@color/colorTextIcons"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="139dp"
+            app:srcCompat="@drawable/rutina" />
 
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="¿Eres Hombre o Mujer?"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
-    <Button
-        android:id="@+id/nextPant"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="452dp"
-        android:background="@color/colorAccent"
-        android:onClick="btnNext"
-        android:text="@string/siguiente_label"
-        android:textColor="@color/colorTextIcons"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="463dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/button_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/Female" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/button_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/Male" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siguiente" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
