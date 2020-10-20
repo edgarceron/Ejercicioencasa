@@ -113,4 +113,14 @@
     <string name="descripcion_del_ejercicio">Aquí va toda la descripción del ejercicio</string>
     <string name="parar_ejercicio">Parar ejercicio</string>
     <string name="ver_en_youtube">Ver en Youtube</string>
+    <string name="cambiar_informacion">Cambiar mi información</string>
+    <string name="sexo">Sexo:</string>
+    <string name="altura_cm">Altura (cm):</string>
+    <string name="peso_kg">Peso (Kg):</string>
+    <string name="calentamiento">Calentamiento:</string>
+    <string name="amigable_con_vecinos">Amigable con vecinos:</string>
+    <string name="dificultad_elegida">Dificultad Elegida:</string>
+    <string name="grupo_muscular_de_enfoque">Grupo Muscular de Enfoque:</string>
+    <string name="asdasd">asdasd</string>
+    <string name="informacion_usuario">Información de Usuario</string>
 </resources>

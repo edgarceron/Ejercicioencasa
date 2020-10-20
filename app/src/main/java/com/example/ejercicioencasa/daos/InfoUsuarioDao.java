@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.widget.ArrayAdapter;
 
 import com.example.ejercicioencasa.databasehelper.DatabaseOpenHelper;
 import com.example.ejercicioencasa.databasehelper.UtilitiesDatabase;
@@ -46,7 +45,7 @@ public class InfoUsuarioDao {
         return lista;
     }
 
-    public InfoUsuario consultarinfo(String codigo){
+    public InfoUsuario consultarInfo(String codigo){
         InfoUsuario infoUsuario = null;
         String[] campos = new String[]{UtilitiesDatabase.TablaInfoUsuario.CODIGO,
                 UtilitiesDatabase.TablaInfoUsuario.VALOR};
@@ -62,7 +61,7 @@ public class InfoUsuarioDao {
     }
 
     public long  alterInfoUsuario(InfoUsuario infoUsuario){
-        if(this.consultarinfo(infoUsuario.codigo) == null){
+        if(this.consultarInfo(infoUsuario.codigo) == null){
             return insertInfoUsuario(infoUsuario);
         }
         else {

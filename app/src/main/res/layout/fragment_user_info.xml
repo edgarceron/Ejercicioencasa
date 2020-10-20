@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,10 +27,10 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="15dp"
                 android:paddingBottom="15dp"
-                android:text="Información de Usuario"
+                android:text="@string/informacion_usuario"
                 android:textAlignment="center"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:background=""/>
 
             <LinearLayout
@@ -50,10 +49,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="Sexo:"
+                        android:text="@string/sexo"
                         android:textAlignment="textEnd"
                         android:textColor="@color/colorSecondaryText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/textView12"
@@ -61,10 +60,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="Altura (cm):"
+                        android:text="@string/altura_cm"
                         android:textAlignment="textEnd"
                         android:textColor="@color/colorSecondaryText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/textView13"
@@ -72,10 +71,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="Peso (Kg):"
+                        android:text="@string/peso_kg"
                         android:textAlignment="textEnd"
                         android:textColor="@color/colorSecondaryText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/textView14"
@@ -83,10 +82,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="Calentamiento:"
+                        android:text="@string/calentamiento"
                         android:textAlignment="textEnd"
                         android:textColor="@color/colorSecondaryText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/textView15"
@@ -94,10 +93,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="Amigable con vecinos:"
+                        android:text="@string/amigable_con_vecinos"
                         android:textAlignment="textEnd"
                         android:textColor="@color/colorSecondaryText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/textView16"
@@ -105,10 +104,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="Dificultad Elegida:"
+                        android:text="@string/dificultad_elegida"
                         android:textAlignment="textEnd"
                         android:textColor="@color/colorSecondaryText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/textView17"
@@ -116,15 +115,15 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="Grupo Muscular de Enfoque:"
+                        android:text="@string/grupo_muscular_de_enfoque"
                         android:textAlignment="textEnd"
                         android:textColor="@color/colorSecondaryText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <TextView
                     android:id="@+id/textView21"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
@@ -139,10 +138,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="asdasd"
+                        android:text="@string/asdasd"
                         android:textAlignment="textStart"
                         android:textColor="@color/colorThirdText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/user_altura"
@@ -150,10 +149,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="asdasd"
+                        android:text="@string/asdasd"
                         android:textAlignment="textStart"
                         android:textColor="@color/colorThirdText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/user_peso"
@@ -161,10 +160,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="asdasd"
+                        android:text="@string/asdasd"
                         android:textAlignment="textStart"
                         android:textColor="@color/colorThirdText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/user_calent"
@@ -172,10 +171,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="asdasd"
+                        android:text="@string/asdasd"
                         android:textAlignment="textStart"
                         android:textColor="@color/colorThirdText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/user_amig"
@@ -183,10 +182,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="asdasd"
+                        android:text="@string/asdasd"
                         android:textAlignment="textStart"
                         android:textColor="@color/colorThirdText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/user_dificult"
@@ -194,10 +193,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="asdasd"
+                        android:text="@string/asdasd"
                         android:textAlignment="textStart"
                         android:textColor="@color/colorThirdText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/user_muscular"
@@ -205,10 +204,10 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="asdasd"
+                        android:text="@string/asdasd"
                         android:textAlignment="textStart"
                         android:textColor="@color/colorThirdText"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -216,7 +215,7 @@
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="@string/cambiar_informacion" />
         </LinearLayout>
 
     </LinearLayout>

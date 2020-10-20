@@ -1,7 +1,5 @@
 package com.example.ejercicioencasa;
 
-import android.annotation.SuppressLint;
-
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.MotionEvent;
-import android.view.View;
 import android.view.WindowManager;
 
 import com.example.ejercicioencasa.daos.InfoUsuario;
@@ -59,7 +55,7 @@ public class SplashScreen extends AppCompatActivity {
                 InfoUsuario.PESO, InfoUsuario.SEXO};
 
         for (String field : fields) {
-            if (infoUsuarioDao.consultarinfo(field) == null) {
+            if (infoUsuarioDao.consultarInfo(field) == null) {
                 return false;
             }
         }

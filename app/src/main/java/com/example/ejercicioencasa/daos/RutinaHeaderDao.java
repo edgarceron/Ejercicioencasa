@@ -28,10 +28,10 @@ public class RutinaHeaderDao {
     }
 
     public int crearRutina(int duracion){
-        String amigable = infoUsuarioDao.consultarinfo(InfoUsuario.AMIGABLE).valor;
-        String objetivo = infoUsuarioDao.consultarinfo(InfoUsuario.OBJETIVO).valor;
-        String calentamiento = infoUsuarioDao.consultarinfo(InfoUsuario.CALENTAMIENTO).valor;
-        String dificultad = infoUsuarioDao.consultarinfo(InfoUsuario.DIFICULTAD).valor;
+        String amigable = infoUsuarioDao.consultarInfo(InfoUsuario.AMIGABLE).valor;
+        String objetivo = infoUsuarioDao.consultarInfo(InfoUsuario.OBJETIVO).valor;
+        String calentamiento = infoUsuarioDao.consultarInfo(InfoUsuario.CALENTAMIENTO).valor;
+        String dificultad = infoUsuarioDao.consultarInfo(InfoUsuario.DIFICULTAD).valor;
 
         duracion = duracion * 60;
 
