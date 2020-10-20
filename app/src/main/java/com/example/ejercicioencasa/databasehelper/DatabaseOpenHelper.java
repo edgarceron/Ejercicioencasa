@@ -12,16 +12,14 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
         super(context, UtilitiesDatabase.DATABASE_NAME, null, UtilitiesDatabase.VERSION);
     }
 
-    private static String ABDOMEN = "Abdomen";
-    private static String PIERNAS = "Piernas";
-    private static String GLUETO = "Gluteo";
-    private static String HOMBRO = "Hombro";
-    private static String BICEPS = "Biceps";
-    private static String TRICEPS = "Triceps";
-    private static String PECHO = "Pecho";
-    private static String ESPALDA = "Espalda";
-
-
+    public static String ABDOMEN = "Abdomen";
+    public static String PIERNAS = "Piernas";
+    public static String GLUETO = "Gluteo";
+    public static String HOMBRO = "Hombro";
+    public static String BICEPS = "Biceps";
+    public static String TRICEPS = "Triceps";
+    public static String PECHO = "Pecho";
+    public static String ESPALDA = "Espalda";
 
     @Override
     public void onCreate(SQLiteDatabase db) {

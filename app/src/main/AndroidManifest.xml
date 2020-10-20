@@ -11,12 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
+        <activity android:name=".UserInfo"></activity>
         <activity android:name=".WarmUpActivity" />
         <activity android:name=".UnitExercise" />
-        android:theme="@style/AppTheme" >
-        <activity android:name=".muscular" >
-        </activity>
-        android:theme="@style/AppTheme">
+        <activity android:name=".muscular"></activity>
         <activity android:name=".Friendly" />
         <activity android:name=".Difficulty" />
         <activity android:name=".RoutineTimeInput" />
@@ -28,7 +26,7 @@
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_splash_screen"
-            android:theme="@style/FullscreenTheme" >
+            android:theme="@style/FullscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

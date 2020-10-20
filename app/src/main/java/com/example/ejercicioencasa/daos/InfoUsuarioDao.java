@@ -49,9 +49,9 @@ public class InfoUsuarioDao {
         InfoUsuario infoUsuario = null;
         String[] campos = new String[]{UtilitiesDatabase.TablaInfoUsuario.CODIGO,
                 UtilitiesDatabase.TablaInfoUsuario.VALOR};
-        String[] parametros = new String[]{UtilitiesDatabase.TablaInfoUsuario.CODIGO};
+        String[] parametros = new String[]{UtilitiesDatabase.TablaInfoUsuario.CODIGO + " = ?"};
         String[] argumentos = new String[]{codigo};
-        Cursor cursor = db.query(UtilitiesDatabase.TablaInfoUsuario.TABLE_NAME, campos, parametros[0] + "=?", argumentos,
+        Cursor cursor = db.query(UtilitiesDatabase.TablaInfoUsuario.TABLE_NAME, campos, parametros[0], argumentos,
                 null, null, null);
         if(cursor.moveToNext()){
             infoUsuario = new InfoUsuario(cursor.getString(0), cursor.getString(1));

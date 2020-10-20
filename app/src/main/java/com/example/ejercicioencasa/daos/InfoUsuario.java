@@ -11,6 +11,8 @@ public class InfoUsuario {
     public static final String OBJETIVO = "objetivo";
     public static final String CALENTAMIENTO = "calentamiento";
     public static final String DIFICULTAD = "dificultad";
+    public static final String GUARDADO = "guardado";
+
 
     public InfoUsuario(String codigo, String valor) {
         this.codigo = codigo;
