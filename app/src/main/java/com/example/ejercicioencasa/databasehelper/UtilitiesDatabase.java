@@ -53,7 +53,7 @@ public class UtilitiesDatabase {
 
     public class TablaRutinaBody{
         public static final String TABLE_NAME = "rutinaBody";
-        public static final String HEADER = "header";
+        public static final String HEADER = "idHeaderRutina";
         public static final String EJERCICIO = "ejercicio";
         public static final String REPETICIONES = "repeticiones";
         public static final String ESTADO = "estado";
@@ -61,8 +61,8 @@ public class UtilitiesDatabase {
         public static final String CREATE_TABLE_RUTINA_BODY = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " (" +
                 HEADER + " INTEGER, " + EJERCICIO + " INTEGER, " + REPETICIONES + " INTEGER, " +
                 ESTADO + " INTEGER, " +
-                "FOREING KEY (" + HEADER + ") REFERENCES " + TablaRutinaHeader.TABLE_NAME + "(" +
-                TablaRutinaHeader.ID + "), FOREING KEY (" + EJERCICIO + ") REFERENCES " + TablaEjercicios.TABLE_NAME +
+                "FOREIGN KEY (" + HEADER + ") REFERENCES " + TablaRutinaHeader.TABLE_NAME + "(" +
+                TablaRutinaHeader.ID + "), FOREIGN KEY(" + EJERCICIO + ") REFERENCES " + TablaEjercicios.TABLE_NAME +
                 " (" + TablaEjercicios.ID + ")";
 
         public static final String CONSULTAR_ALL_TABLE = "SELECT * FROM " + TABLE_NAME + ";";
