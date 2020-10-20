@@ -42,13 +42,13 @@ public class RoutineTimeInput extends AppCompatActivity {
             tiempo = 15;
         }
 
-        //RutinaHeaderDao rutinaHeaderDao = new RutinaHeaderDao(context);
+        RutinaHeaderDao rutinaHeaderDao = new RutinaHeaderDao(context);
         //int idRutina =  rutinaHeaderDao.crearRutina(tiempo);
 
 
 
         //TODO Guardar tiempo de rutina
-        Intent intent = new Intent(this, Friendly.class);
+        Intent intent = new Intent(this, UserInfo.class);
         startActivity(intent);
     }
 }
