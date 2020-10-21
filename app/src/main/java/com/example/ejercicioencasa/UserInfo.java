@@ -23,13 +23,35 @@ public class UserInfo extends AppCompatActivity {
         context = getApplicationContext();
         InfoUsuarioDao infoUsuarioDao = new InfoUsuarioDao(context);
         String sexo = infoUsuarioDao.consultarInfo(InfoUsuario.SEXO).getValor();
+        String altura = infoUsuarioDao.consultarInfo(InfoUsuario.ALTURA).getValor();
+        String peso = infoUsuarioDao.consultarInfo(InfoUsuario.PESO).getValor();
+        String calentamiento = infoUsuarioDao.consultarInfo(InfoUsuario.CALENTAMIENTO).getValor();
+        String amigable = infoUsuarioDao.consultarInfo(InfoUsuario.AMIGABLE).getValor();
+        String dificultad = infoUsuarioDao.consultarInfo(InfoUsuario.DIFICULTAD).getValor();
+        String objetivo = infoUsuarioDao.consultarInfo(InfoUsuario.OBJETIVO).getValor();
+
+        TextView userObj = findViewById(R.id.user_muscular);
+        userObj.setText(objetivo);
+
+        TextView userDif = findViewById(R.id.user_dificult);
+        userDif.setText(dificultad);
+
+        TextView userFriendly = findViewById(R.id.user_amig);
+        userFriendly.setText(amigable);
+
+        TextView userCalent = findViewById(R.id.user_calent);
+        userCalent.setText(calentamiento);
+
+        TextView userAltura = findViewById(R.id.user_altura);
+        userAltura.setText(altura);
+
+        TextView userPeso = findViewById(R.id.user_peso);
+        userPeso.setText(peso);
 
         if(sexo.equals("M")) sexo = "Maculino";
         else sexo = "Femenino";
         TextView userSexo = findViewById(R.id.user_sexo);
         userSexo.setText(sexo);
-
-
     }
 
     public void cambiarInfoBtn(View view){
