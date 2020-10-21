@@ -3,13 +3,10 @@ package com.example.ejercicioencasa;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.ejercicioencasa.daos.Ejercicio;
-import com.example.ejercicioencasa.daos.EjercicioDao;
 import com.example.ejercicioencasa.daos.InfoUsuario;
 import com.example.ejercicioencasa.daos.InfoUsuarioDao;
 
@@ -26,7 +23,7 @@ public class UserInfo extends AppCompatActivity {
 
         if(sexo.equals("M")) sexo = "Maculino";
         else sexo = "Femenino";
-        TextView userSexo = findViewById(R.id.user_sexo);
+        TextView userSexo = findViewById(R.id.user_sex);
         userSexo.setText(sexo);
 
 
