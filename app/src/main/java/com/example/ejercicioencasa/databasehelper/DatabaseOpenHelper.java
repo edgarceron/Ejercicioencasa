@@ -45,7 +45,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
                         "behind you and stand up tall.\n" + "2. Position your right foot on top of the " +
                         "step, bend your knees and lower the hips until your left thigh is parallel " +
                         "to the floor.\n" + "3. Return to the starting position and repeat.\n" +
-                        "4. Switch legs.","bulgarian-split-squat",
+                        "4. Switch legs.","bulgarian_split_squat",
                 "https://www.youtube.com/watch?v=q4iZhYpVOOA", 0.6f, 3, 1,
                 PIERNAS, 0);
         insertEjercicio(db, "Chest press", "1. Lie down on a mat with your knees " +

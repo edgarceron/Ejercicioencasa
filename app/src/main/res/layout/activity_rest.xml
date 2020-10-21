@@ -29,10 +29,6 @@
             android:textColor="@color/colorPrimaryText"
             android:textSize="40sp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="49dp" />
-
         <pl.droidsonroids.gif.GifTextView
             android:layout_width="match_parent"
             android:layout_height="400dp"
@@ -43,16 +39,12 @@
             android:textColor="@color/colorPrimaryText"
             android:textAlignment="center" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="49dp" />
-
         <Button
             android:id="@+id/button_tiempo_rut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Siguiente"
-            android:onClick="stopRest"/>
+            android:onClick="stopRest"
+            android:text="Siguiente" />
 
         <Button
             android:id="@+id/button_stop_routine"

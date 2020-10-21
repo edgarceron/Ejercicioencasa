@@ -1,7 +1,6 @@
 package com.example.ejercicioencasa;
 
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -13,6 +12,7 @@ import android.widget.EditText;
 
 import com.example.ejercicioencasa.daos.InfoUsuario;
 import com.example.ejercicioencasa.utilities.AppUtilities;
+import com.example.ejercicioencasa.utilities.DialogInfo;
 
 public class WeightInput extends AppCompatActivity {
 

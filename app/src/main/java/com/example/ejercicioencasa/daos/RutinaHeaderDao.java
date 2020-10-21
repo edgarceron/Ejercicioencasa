@@ -42,7 +42,7 @@ public class RutinaHeaderDao {
                 Integer.parseInt(dificultad), objetivo, Integer.parseInt(amigable));
 
         ArrayList<Ejercicio> calentamientos = new ArrayList<>();
-        if(calentamiento.equals("Si")){
+        if(calentamiento.equals("1")){
             calentamientos = ejercicioDao.getEjercicios(
                     Integer.parseInt(dificultad), "Calentamiento", Integer.parseInt(amigable));
         }
