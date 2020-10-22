@@ -10,7 +10,7 @@
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="236dp"
+        android:layout_marginBottom="272dp"
         android:onClick="btnNext"
         android:text="@string/siguiente_label"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,8 +20,8 @@
 
     <RadioGroup
         android:id="@+id/radioGroupTime"
-        android:layout_width="177dp"
-        android:layout_height="240dp"
+        android:layout_width="188dp"
+        android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
