@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks jere. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
             return true;
         } else return false;
-    }
+    }*/
 
     public void btn(View view){
         Intent intent = new Intent(this, SplashScreen.class);
