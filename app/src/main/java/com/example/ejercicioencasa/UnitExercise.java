@@ -75,7 +75,7 @@ public class UnitExercise extends AppCompatActivity {
             startActivity(intent);
         }
         else{
-            DialogInfo dialogInfo = new DialogInfo("Ir a intent de finalización");
+            DialogInfo dialogInfo = new DialogInfo("Termino el entrenamiento, felicidades");
             dialogInfo.show(getSupportFragmentManager(), "End");
             //Ir a activity de felicitación
         }

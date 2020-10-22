@@ -41,7 +41,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
                         "4. Continue alternating sides until set is complete.","plank-bird-dog",
                 "https://www.youtube.com/watch?v=8Fc6ZO8owZk", 0.6f, 3, 1,
                 ABDOMEN, 0);
-        insertEjercicio(db, "Bulgarian split squat", "1. Place a step or a box " +
+        insertEjercicio(db, "BULGARIAN SPLIT SQUAT", "1. Place a step or a box " +
                         "behind you and stand up tall.\n" + "2. Position your right foot on top of the " +
                         "step, bend your knees and lower the hips until your left thigh is parallel " +
                         "to the floor.\n" + "3. Return to the starting position and repeat.\n" +
@@ -118,13 +118,13 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
                         "de aproximadamente 1 pie de diámetro.\n" + "4. Complete una serie en una dirección" +
                         " y luego cambie, girando en sentido antihorario.\n" + "5. Baje ambas piernas, cambie " +
                         "de lado y repita.","circles_sky",
-                "https://www.youtube.com/watch?v=N5tz2ZYBWSk&ab_channel=NibiruLLC",
+                "https://www.youtube.com/watch?v=N5tz2ZYBWSk",
                 0.45f, 3, 1, PIERNAS, 0);
         insertEjercicio(db, "SENTADILLA COSSACK", "1. Párese con los pies en una " +
                         "posición amplia y con los dedos de los pies apuntando hacia los lados.\n" +
                         "2. Póngase en cuclillas hacia la derecha, bajando tanto como le resulte cómodo.\n" +
                         "3. Regrese a la posición inicial y repita en el lado izquierdo.","cossack_squat",
-                "https://www.youtube.com/watch?v=dhDjKmTX8tU&ab_channel=FunctionalBodybuilding",
+                "https://www.youtube.com/watch?v=dhDjKmTX8tU",
                 0.6f, 3, 3, PIERNAS, 0);
         insertEjercicio(db, "BURPEES", "1. Párese derecho con los pies separados " +
                         "a la altura de los hombros.\n" + "2. Póngase en cuclillas y coloque las manos " +
@@ -135,10 +135,10 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
                 "https://www.youtube.com/watch?v=Uy2nUNX38xE&ab_channel=Foroatletismo",
                 0.65f, 3, 2, PIERNAS, 0);
         insertEjercicio(db, "DIPS DE MARIPOSA", "1. Siéntese en la colchoneta con los pies juntos, coloque las manos detrás de usted con los dedos mirando hacia adelante, doble las rodillas y deje que los muslos se abran.\n" + "2. Estire los brazos mientras presiona las caderas hacia arriba y junte ambas rodillas.\n" + "3. Doble los codos y baje el cuerpo a la posición inicial.\n" + "4. Repita hasta completar el conjunto.","butterfly_dips",
-                "https://www.youtube.com/watch?v=1d7XGAqSKJ4&ab_channel=HildaH.Salha", 0.6f, 3, 2,
+                "https://www.youtube.com/watch?v=1d7XGAqSKJ4", 0.6f, 3, 2,
                 TRICEPS, 1);
         insertEjercicio(db, "TRICEP DE UN BRAZO HACIA ARRIBA", "1. Acuéstese sobre su lado derecho con los pies, las caderas y los hombros juntos. Coloque la palma de su mano izquierda sobre la colchoneta frente a su hombro derecho y abrace su cintura con su brazo derecho.\n" + "2. Estire su brazo izquierdo y empuje su torso hacia arriba.\n" + "3. Doble el brazo y baje el torso hacia la colchoneta.\n" + "4. Repita y luego cambie de lado.","one_arm_tricep",
-                "https://www.youtube.com/watch?v=jOVCDAfv8xk&ab_channel=ChristinaJensen", 0.55f, 3, 3,
+                "https://www.youtube.com/watch?v=jOVCDAfv8xk", 0.55f, 3, 3,
                 TRICEPS, 0);
         insertEjercicio(db, "ARRIBA ABAJO TABLÓN", "1. Empiece en posición de plancha, con las muñecas debajo de los hombros y los pies separados a la altura de las caderas.\n" + "2. Doble su brazo izquierdo, coloque su codo izquierdo sobre la colchoneta y luego doble su brazo derecho y coloque su codo derecho sobre la colchoneta.\n" + "3. Coloque su mano izquierda sobre el tapete, estire su brazo izquierdo y luego coloque su mano derecha sobre el tapete y enderece su brazo derecho.\n" + "4. Cambie de lado y repita este movimiento hacia arriba y hacia abajo hasta completar el conjunto.","up_down_plank",
                 "https://www.youtube.com/watch?v=AAPpXm-q7lc&ab_channel=DAREBEE", 0.85f, 3, 2,
@@ -156,7 +156,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
                 "https://www.youtube.com/watch?v=iZoaF6Unr9o&ab_channel=W10PersonalTrainingGym", 0.55f, 3, 3,
                 PIERNAS, 0);
         insertEjercicio(db, "CÍRCULOS EN EL CIELO", "1. Acuéstese boca arriba con las piernas extendidas y las manos apoyando la cabeza.\n" + "2. Levante los hombros del suelo, levante la pierna derecha en un ángulo de 90 grados y levante la pierna izquierda a sólo unos centímetros del suelo.\n" + "3. Gire lentamente la pierna derecha, haciendo pequeños círculos en el sentido de las agujas del reloj de aproximadamente 1 pie de diámetro.\n" + "4. Complete una serie en una dirección y luego cambie, girando en sentido antihorario.\n" + "5. Baje ambas piernas, cambie de lado y repita.","circles_sky",
-                "https://www.youtube.com/watch?v=N5tz2ZYBWSk&ab_channel=NibiruLLC", 0.45f, 3, 3,
+                "https://www.youtube.com/watch?v=N5tz2ZYBWSk", 0.45f, 3, 3,
                 PIERNAS, 0);
         insertEjercicio(db, "SENTADILLA COSSACK", "1. Párese con los pies en una posición amplia y con los dedos de los pies apuntando hacia los lados.\n" + "2. Póngase en cuclillas hacia la derecha, bajando tanto como le resulte cómodo.\n" + "3. Regrese a la posición inicial y repita en el lado izquierdo.","cossack_squat",
                 "https://www.youtube.com/watch?v=dhDjKmTX8tU&ab_channel=FunctionalBodybuilding", 0.6f, 3, 1,
