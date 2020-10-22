@@ -37,7 +37,7 @@ public class WarmUpActivity extends AppCompatActivity {
 
         AppUtilities.alterInfoUsuario(InfoUsuario.GUARDADO, "1", context);
 
-        Intent intent = new Intent(this, TestingActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

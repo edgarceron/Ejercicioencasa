@@ -65,7 +65,7 @@ public class rest extends AppCompatActivity {
     }
 
     public void goToMainActivity(View v){
-        Intent i = new Intent(this, TestingActivity.class);
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 }

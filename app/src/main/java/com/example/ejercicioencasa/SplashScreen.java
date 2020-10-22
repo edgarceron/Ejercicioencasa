@@ -37,7 +37,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 Intent intent;
                 if(verifyUserData()){
-                    intent = new Intent(SplashScreen.this, TestingActivity.class);
+                    intent = new Intent(SplashScreen.this, MainActivity.class);
                 }
                 else {
                     intent = new Intent(SplashScreen.this, GenderSelect.class);

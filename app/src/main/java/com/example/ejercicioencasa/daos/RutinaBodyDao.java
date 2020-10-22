@@ -96,6 +96,8 @@ public class RutinaBodyDao {
                     )
             );
         }
+
+        cursor.close();
         return  rutinaBodies;
     }
 
