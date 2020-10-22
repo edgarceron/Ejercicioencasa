@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.widget.Chronometer;
 import android.view.View;
+import android.widget.Toast;
 
 public class routine extends AppCompatActivity {
     private Chronometer chronometer;
@@ -25,6 +26,7 @@ public class routine extends AppCompatActivity {
     public void stopRoutine(View v) {
         chronometer.stop();
         this.routine_time = (SystemClock.elapsedRealtime() - chronometer.getBase());
+        Toast.makeText(this, "¡Completaste el entrenamiento! ¡Felicitaciones!", Toast.LENGTH_SHORT).show();
     }
 
 }
